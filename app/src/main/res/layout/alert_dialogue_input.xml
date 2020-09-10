@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/bahnschrift"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Food"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <EditText
+        android:id="@+id/calval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter calorie"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+
+    <EditText
+        android:id="@+id/foodval"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Item(Your Measuring Unit)"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/bahnschrift"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Calories(kCal)"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/foodval"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="New Food Item"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/bahnschrift"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <requestFocus/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

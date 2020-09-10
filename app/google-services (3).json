@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "957571053915",
+    "firebase_url": "https://cardiouser-95207.firebaseio.com",
+    "project_id": "cardiouser-95207",
+    "storage_bucket": "cardiouser-95207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957571053915:android:05178c8edb3ac3c72f427e",
+        "android_client_info": {
+          "package_name": "com.example.workncardio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957571053915-qfqb4fq2hp4vsv66memcubqjnu7j6dlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjQU5uLXsPF8NraS3zr7O-Ym6uqMZoYK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957571053915-qfqb4fq2hp4vsv66memcubqjnu7j6dlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

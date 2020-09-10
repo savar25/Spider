@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="vertical"
+    android:background="#00ff00">
+
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+
+        android:text="Workout Status"
+        android:textColor="#ff0000"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="15dp"
+        android:text="TExtView"
+        android:gravity="center"
+        android:textAlignment="center"
+        style="@style/TextAppearance.Compat.Notification.Info"/>
+</LinearLayout>

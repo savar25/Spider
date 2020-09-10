@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".initValues"
+    android:background="#040404">
+
+    <ImageView
+        android:id="@+id/logoForm"
+        android:layout_width="165dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="363dp"
+        android:layout_height="424dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoForm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/det_shape"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Name"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/bahnschrift"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/bahnschrift"
+                    android:textSize="23sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/FID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/det_shape"
+                    android:ems="10"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/bahnschrift"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="Email"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/bahnschrift"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Fage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/bahnschrift"
+                    android:background="@drawable/det_shape"
+                    android:ems="10"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:hint="Age"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/bahnschrift"
+                    android:text="Age"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Fweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bahnschrift"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/det_shape"
+                    android:ems="10"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:hint="Weight"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="Weight"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/bahnschrift"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Fheight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/bahnschrift"
+                    android:background="@drawable/det_shape"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:cursorVisible="false"
+                    android:hint="Height"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView7"
+                    app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="Height"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/bahnschrift"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/FworkHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/det_shape"
+                    android:ems="10"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:fontFamily="@font/bahnschrift"
+                    android:hint="Work Hours "
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="Work Hours"
+                    android:fontFamily="@font/bahnschrift"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Fnom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/bahnschrift"
+                    android:background="@drawable/det_shape"
+                    android:ems="10"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:hint="No. of Meals"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView9"
+                    app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="No. of Meals"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/bahnschrift"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Fsteps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/det_shape"
+                    android:ems="10"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:hint="Step Goal"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/bahnschrift"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView10"
+                    app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:text="Step Goal"
+                    android:fontFamily="@font/bahnschrift"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="275dp"
+                    android:background="@drawable/det_shape"
+                    android:text="SAVE"
+                    android:fontFamily="@font/ocra"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

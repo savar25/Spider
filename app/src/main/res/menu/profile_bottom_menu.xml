@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/steps"
+        android:icon="@drawable/step_shortcut_icon"
+        android:title="Steps" />
+    <item
+        android:id="@+id/analysis"
+        android:icon="@drawable/anlysis"
+        android:iconTint="#ddd"
+        android:title="Analysis" />
+
+    <item
+        android:id="@+id/goal"
+        android:icon="@drawable/ic_goal"
+        android:title="Goal"/>
+</menu>

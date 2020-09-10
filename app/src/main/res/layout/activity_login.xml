@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="#040404">
+
+    <EditText
+        android:id="@+id/Uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/det_shape"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:fontFamily="@font/bahnschrift"
+        android:gravity="center"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/UEmID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/prompt_email"
+        android:fontFamily="@font/bahnschrift"
+        android:cursorVisible="true"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:background="@drawable/det_shape"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Uname" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="145dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:buttonTint="@android:color/white"
+        android:text="Save Details"
+        android:checked="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/UEmID"
+        app:layout_constraintTop_toBottomOf="@+id/UEmID" />
+
+    <Button
+        android:id="@+id/LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@android:color/white"
+        android:text="LOGIN"
+        android:fontFamily="@font/ocra"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:buttonTint="@android:color/white"
+        android:checked="true"
+        android:text="Stay Logged In"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+</androidx.constraintlayout.widget.ConstraintLayout>

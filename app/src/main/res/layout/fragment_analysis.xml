@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".analysisFragment"
+    android:background="#040404">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/analysis_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/advice"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:text="TextView"
+                android:fontFamily="@font/swcomp"
+                android:textColor="#FB2B11"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:gravity="center"
+
+                app:layout_constraintBottom_toBottomOf="@+id/current"
+                app:layout_constraintEnd_toStartOf="@+id/stepLeft"
+                app:layout_constraintStart_toEndOf="@+id/current"
+                app:layout_constraintTop_toTopOf="@+id/current" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/britanic"
+                android:gravity="center"
+                android:text="Current Steps"
+                android:textAlignment="center"
+                android:textColor="#faed27"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/current"
+                app:layout_constraintEnd_toEndOf="@+id/current"
+                app:layout_constraintStart_toStartOf="@+id/current" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/britanic"
+                android:gravity="center"
+                android:text="Steps Left"
+                android:textAlignment="center"
+                android:textColor="#faed27"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/stepLeft"
+                app:layout_constraintEnd_toEndOf="@+id/stepLeft"
+                app:layout_constraintStart_toStartOf="@+id/stepLeft" />
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginStart="30dp"
+                android:background="#cccccc"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/stepLeft"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="#cccccc"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/swital"
+                android:gravity="center"
+                android:text="History Analysis"
+                android:textAlignment="center"
+                android:textColor="#83f52c"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView15"
+                app:layout_constraintHorizontal_bias="0.447"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/combined_chart" />
+
+            <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/combined_chart"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/shoe"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/step_shortcut_icon"
+                app:layout_constraintBottom_toTopOf="@+id/advice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

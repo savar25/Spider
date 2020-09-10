@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".workoutFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#040404">
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="68dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="192dp"
+            android:background="@android:color/background_dark"
+            android:src="@drawable/heart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/step_cardio"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/counter_background"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#ff0000"
+            android:textSize="23sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/acceleration_cardio"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/counter_background"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#ff0000"
+            android:textSize="23sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/step_cardio"
+            app:layout_constraintEnd_toStartOf="@+id/cal_lost_cardio"
+            app:layout_constraintStart_toEndOf="@+id/step_cardio"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cal_lost_cardio"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/counter_background"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#ff0000"
+            android:textSize="23sp"
+            android:textStyle="italic|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/goal_cal_cardio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:background="#bcbcbc"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="@font/california"
+            android:textStyle="bold|italic"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView28"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Steps"
+            android:fontFamily="@font/britanic"
+            android:textSize="18sp"
+            android:textColor="#ffff00"
+            android:textAlignment="center"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/step_cardio"
+            app:layout_constraintStart_toStartOf="@+id/step_cardio"
+            app:layout_constraintTop_toBottomOf="@+id/step_cardio" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Acceleration\n m/sq.sec"
+            android:textSize="18sp"
+            android:textColor="#ffff00"
+            android:fontFamily="@font/britanic"
+            android:textAlignment="center"
+            android:gravity="center"            app:layout_constraintEnd_toEndOf="@+id/acceleration_cardio"
+            app:layout_constraintStart_toStartOf="@+id/acceleration_cardio"
+            app:layout_constraintTop_toBottomOf="@+id/acceleration_cardio" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Cals Burnt\n Kcal"
+            android:textSize="18sp"
+            android:fontFamily="@font/britanic"
+            android:textColor="#ffff00"
+            android:textAlignment="center"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/cal_lost_cardio"
+            app:layout_constraintStart_toStartOf="@+id/cal_lost_cardio"
+            app:layout_constraintTop_toBottomOf="@+id/cal_lost_cardio" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/britanic"
+            android:gravity="center"
+            android:text="Goal"
+            android:textAlignment="center"
+            android:textColor="#00eeff"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/goal_cal_cardio"
+            app:layout_constraintEnd_toEndOf="@+id/song_name"
+            app:layout_constraintStart_toStartOf="@+id/song_name" />
+
+        <ImageView
+            android:id="@+id/playbtn"
+            android:layout_width="87dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="220dp"
+            android:background="@color/black"
+            android:src="@drawable/playbtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <ImageView
+            android:id="@+id/pausebtn"
+            android:layout_width="79dp"
+            android:layout_height="66dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/pausebtn"
+            app:layout_constraintBottom_toBottomOf="@+id/playbtn"
+            app:layout_constraintEnd_toStartOf="@+id/playbtn" />
+
+        <ImageView
+            android:id="@+id/stopbtn"
+            android:layout_width="79dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/stpbtn"
+            app:layout_constraintBottom_toBottomOf="@+id/playbtn"
+            app:layout_constraintStart_toEndOf="@+id/playbtn" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/music"
+            app:layout_constraintBottom_toTopOf="@+id/playbtn"
+            app:layout_constraintEnd_toEndOf="@+id/playbtn"
+            app:layout_constraintHorizontal_bias="0.42"
+            app:layout_constraintStart_toStartOf="@+id/playbtn"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            app:layout_constraintVertical_bias="0.32999998"
+            app:srcCompat="@drawable/music" />
+
+        <Spinner
+            android:id="@+id/bundle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:dropDownSelector="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/fire1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/fire_off"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fire2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/fire_off"
+            app:layout_constraintBottom_toBottomOf="@+id/fire1"
+            app:layout_constraintStart_toEndOf="@+id/fire1"
+            app:layout_constraintTop_toTopOf="@+id/fire1" />
+
+        <ImageView
+            android:id="@+id/fire3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/fire_off"
+            app:layout_constraintBottom_toBottomOf="@+id/fire2"
+            app:layout_constraintStart_toEndOf="@+id/fire2"
+            app:layout_constraintTop_toTopOf="@+id/fire2" />
+
+        <ImageView
+            android:id="@+id/cooldown"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ice_off"
+            app:layout_constraintStart_toEndOf="@+id/fire3"
+            app:layout_constraintTop_toTopOf="@+id/fire1" />
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Song"
+            android:fontFamily="@font/arcena"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/stopbtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pausebtn"
+            app:layout_constraintTop_toBottomOf="@+id/playbtn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

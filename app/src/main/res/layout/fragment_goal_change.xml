@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".goalChange"
+    android:background="#040404">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/currentGoal"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#cccccc"
+            android:gravity="center"
+            android:text="0"
+            android:fontFamily="@font/swcomp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/ExpectedGoal"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#cccccc"
+            android:gravity="center"
+            android:text="0"
+            android:fontFamily="@font/swcomp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <EditText
+            android:id="@+id/setnewGoal"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/det_shape"
+            android:ems="10"
+            android:fontFamily="@font/swcomp"
+            android:hint="Set Number"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.378"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="297dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/trapezoid"
+            android:fontFamily="@font/britanic"
+            android:gravity="center"
+            android:text="Current Goal"
+            android:textAlignment="center"
+            android:textColor="#fc4827"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/currentGoal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/currentGoal"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="297dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/trapezoid"
+            android:gravity="center"
+            android:text="Expected Goal"
+            android:fontFamily="@font/britanic"
+            android:textAlignment="center"
+            android:textColor="#fc4827"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/ExpectedGoal"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@+id/ExpectedGoal"
+            app:layout_constraintTop_toBottomOf="@+id/currentGoal" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="297dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/trapezoid"
+            android:gravity="center"
+            android:text="New Goal"
+            android:fontFamily="@font/britanic"
+            android:textAlignment="center"
+            android:textColor="#fc4827"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/setnewGoal"
+            app:layout_constraintStart_toStartOf="@+id/setnewGoal"
+            app:layout_constraintTop_toBottomOf="@+id/ExpectedGoal" />
+
+        <ImageView
+            android:id="@+id/setGoalBtn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:background="@drawable/det_shape"
+            android:src="@android:drawable/checkbox_on_background"
+            app:layout_constraintBottom_toBottomOf="@+id/setnewGoal"
+            app:layout_constraintEnd_toEndOf="@+id/setnewGoal"
+            app:layout_constraintTop_toTopOf="@+id/setnewGoal" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="casual"
+            android:text="@string/note"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/ExpectedGoal"
+            app:layout_constraintStart_toStartOf="@+id/ExpectedGoal"
+            app:layout_constraintTop_toBottomOf="@+id/ExpectedGoal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
